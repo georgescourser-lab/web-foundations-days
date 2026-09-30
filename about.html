@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - QuickNotes</title>
+    <title>About QuickNotes</title>
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"> Home</a>
-        <a href="about.html"> About</a>
-      </nav>
       <h1>QuickNotes</h1>
       <p>Capture ideas before they disappear.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
     </header>
 
     <main>
-      <h2>About QuickNotes</h2>
-      <p>QuickNotes is a lightweight application designed to help you instantly capture your fleeting thoughts and ideas. It provides a simple, distraction-free environment so you can focus entirely on what you want to remember.</p>
+      <section>
+        <h2>About QuickNotes</h2>
+        <p>QuickNotes is a lightweight application designed to help you instantly capture your fleeting thoughts and ideas. It provides a simple, distraction-free environment so you can focus entirely on what you want to remember.</p>
+      </section>
 
       <section>
         <h2>How to use QuickNotes</h2>
@@ -35,6 +37,44 @@
           <li>Fast note creation</li>
           <li>Responsive design</li>
         </ul>
+      </section>
+
+      <section>
+        <h2>Keyboard shortcuts</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Shortcut</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ctrl + N</td>
+              <td>New Note</td>
+            </tr>
+            <tr>
+              <td>Ctrl + S</td>
+              <td>Save Note</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Send feedback</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
 
