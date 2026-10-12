@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Directory - Day 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="users.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1 class="logo">User Directory</h1>
+        <p class="tagline">Explore users fetched asynchronously via REST API</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="card">
+        <div class="controls-toolbar">
+          <button id="load-users" type="button">Load Users</button>
+
+          <div class="filter-group">
+            <label for="filter-input" class="filter-label">Filter by name:</label>
+            <input
+              type="text"
+              id="filter-input"
+              class="filter-input"
+              placeholder="Type a name to filter..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <p id="status" class="status-message" aria-live="polite"></p>
+
+        <ul id="users-list" class="users-list"></ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Web Foundations Day 5. Asynchronous JavaScript & REST APIs.</p>
+    </footer>
+  </body>
+</html>
